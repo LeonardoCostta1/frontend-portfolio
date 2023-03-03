@@ -1,0 +1,83 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #0d0f13 26.56%, #030507 82.29%);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home__container {
+  height: 100vh;
+  width: calc(100% - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.home__container .headline {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 2.7rem;
+  position: relative;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.home__container .headline .welcome {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.home__container .headline .text_headline {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.home__container .headline .option {
+  font-size: 10px;
+  height: 50px;
+  border-bottom: 1px solid hsla(0, 0%, 42.7%, 0.2);
+  margin-bottom: 30px;
+}
+.home__container .headline .option svg {
+  width: 10px;
+  margin-right: 20px;
+}
+.home__container .headline .resume {
+  font-size: 12px;
+  line-height: normal;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+  width: 350px;
+  opacity: 0.6;
+}
+.home__container .home_information_container {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.home__container .home_information_container .info_box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: right;
+  width: 100px;
+}
+.home__container .home_information_container .info_box .number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.home__container .home_information_container .info_box .info {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 5px;
+}/*# sourceMappingURL=style.css.map */

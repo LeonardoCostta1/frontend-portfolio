@@ -1,0 +1,58 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 9999;
+  background: #030507;
+}
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 100px);
+  height: 100%;
+}
+.menu__container .drag_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__container .drag_container .nav {
+  text-transform: uppercase;
+  font-size: 11px;
+  opacity: 0.7;
+  transition: all ease 0.2s;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.menu__container .drag_container .nav:hover {
+  opacity: 1;
+}
+.menu__container .drag_container .drag {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu__container .drag_container .drag div {
+  height: 1px;
+  width: 50%;
+  background: #fff;
+  margin-bottom: 4px;
+}
+.menu__container .drag_container .drag div:nth-child(2) {
+  width: 40%;
+  transition: all ease 0.2s;
+}
+.menu__container .drag_container .drag div:last-child {
+  margin-bottom: 0;
+}
+.menu__container .drag_container .drag:hover div:nth-child(2) {
+  width: 60%;
+}/*# sourceMappingURL=style.css.map */

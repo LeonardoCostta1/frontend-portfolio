@@ -1,0 +1,30 @@
+.btn {
+  box-sizing: border-box;
+  width: 241px;
+  height: 44px;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.19) 0%, rgba(217, 217, 217, 0) 100%);
+  border-radius: 41px;
+  border: 1px solid;
+  border: 1px solid;
+  text-transform: capitalize;
+  border-top: 1px solid rgba(255, 255, 255, 0.72);
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+}
+.btn:hover {
+  animation-name: flash;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

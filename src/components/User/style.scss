@@ -1,0 +1,142 @@
+.user {
+  height: 550px;
+  width: 550px;
+  border-radius: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 1s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+
+  .circle_on {
+    border-radius: 100%;
+    width: 447px;
+    height: 447px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/img/circle.svg) no-repeat;
+    transition: all ease .3s;
+    position: relative;
+
+    .card {
+      height: 100px;
+      width: 300px;
+      border-top: 1px solid rgba(255, 255, 255, 0.72);
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+      position: absolute;
+      border-radius: 10px;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      text-transform: capitalize;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(
+        180deg,
+        rgba(217, 217, 217, 0.19) 0%,
+        rgba(217, 217, 217, 0) 100%
+      );
+
+      padding: 10px 20px;
+
+      .title_card {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .text {
+        font-size: 11px;
+      }
+    }
+    .c1 {
+      left: -50%;
+      top: 10%;
+      .line {
+        background: url(../../assets/img/line.svg);
+        position: absolute;
+        width: 85px;
+        height: 84px;
+        right: -82px;
+        top: 42px;
+      }
+    }
+    .c2 {
+      right: -50%;
+      bottom: 10%;
+      .line {
+        background: url(../../assets/img/line.svg);
+        position: absolute;
+        width: 85px;
+        height: 84px;
+        left: -82px;
+        top: -32px;
+        transform: rotate(180deg);
+      }
+    }
+    @-webkit-keyframes flash {
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes flash {
+      0%,
+      50%,
+      100% {
+        opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    .circle {
+      width: 326px;
+      height: 326px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #b2bfd6bb 0%,
+        rgba(217, 217, 217, 0) 100%
+      );
+    }
+  }
+
+  &:hover {
+    .card {
+      display: flex;
+      -webkit-animation-name: flash;
+      animation-name: flash;
+      -webkit-animation-duration: .3s;
+      animation-duration: .3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.scroll {
+  position: fixed;
+  left: 0;
+}

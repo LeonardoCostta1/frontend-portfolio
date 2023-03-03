@@ -1,0 +1,17 @@
+.article_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background: #030507;
+  padding: 200px 0 100px 0;
+}
+.article_wrapper .article_container {
+  width: calc(100% - 400px);
+}
+.article_wrapper .article_container .article_text {
+  color: #030507;
+}/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,36 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.css";
+import "../components/Bottom/style.css";
+import "../components/User/style.css";
+import "../components/Cookies/style.css";
+import "../components/Menu/style.css";
+import "../components/Button/style.css";
+import "../components/Footer/style.css";
+import "../components/Logo/style.css";
+import "../components/SKils/style.css";
+import "../features/Home/style.css";
+import "../features/Home/Portfolio/style.css";
+import "../pages/contact/style.css";
+import "../pages/blog/style.css";
+import "../pages/blog/[id]/style.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+import type { AppProps } from "next/app";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+import Menu from "@/components/Menu";
+import Cookies from "@/components/Cookies";
+import Footer from "@/components/Footer";
+import Bottom from "@/components/Bottom";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Provider store={store}>
+      <Menu />
+      <Component {...pageProps} />
+      <Bottom/>
+      {/* <Cookies/> */}
+      <Footer />
+    </Provider>
+  );
 }

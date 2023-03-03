@@ -1,0 +1,105 @@
+.user {
+  height: 550px;
+  width: 550px;
+  border-radius: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 1s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 10;
+}
+.user .circle_on {
+  border-radius: 100%;
+  width: 447px;
+  height: 447px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../assets/img/circle.svg) no-repeat;
+  transition: all ease 0.3s;
+  position: relative;
+}
+.user .circle_on .card {
+  height: 100px;
+  width: 300px;
+  border-top: 1px solid rgba(255, 255, 255, 0.72);
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  position: absolute;
+  border-radius: 10px;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: capitalize;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.19) 0%, rgba(217, 217, 217, 0) 100%);
+  padding: 10px 20px;
+}
+.user .circle_on .card .title_card {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.user .circle_on .card .text {
+  font-size: 11px;
+}
+.user .circle_on .c1 {
+  left: -50%;
+  top: 10%;
+}
+.user .circle_on .c1 .line {
+  background: url(../../assets/img/line.svg);
+  position: absolute;
+  width: 85px;
+  height: 84px;
+  right: -82px;
+  top: 42px;
+}
+.user .circle_on .c2 {
+  right: -50%;
+  bottom: 10%;
+}
+.user .circle_on .c2 .line {
+  background: url(../../assets/img/line.svg);
+  position: absolute;
+  width: 85px;
+  height: 84px;
+  left: -82px;
+  top: -32px;
+  transform: rotate(180deg);
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.user .circle_on .circle {
+  width: 326px;
+  height: 326px;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(178, 191, 214, 0.7333333333) 0%, rgba(217, 217, 217, 0) 100%);
+}
+.user:hover .card {
+  display: flex;
+  animation-name: flash;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.scroll {
+  position: fixed;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

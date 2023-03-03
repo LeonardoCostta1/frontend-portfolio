@@ -1,0 +1,41 @@
+@import '../../variables/style';
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__company {
+    font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 24px;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    }
+    &__cover {
+        width: 25px;
+        height: 25px;
+        border-radius: 33px;
+        background: url(../../assets/img/lc.jpg);
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 33px;
+        }
+    }
+    &__user {
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 10px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin: 0 10px;
+      color: #d9d9d9cc;
+    }
+  }
+}

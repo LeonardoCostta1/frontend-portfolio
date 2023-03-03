@@ -1,0 +1,18 @@
+@import '../../../variables/style';
+.article_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background: $dark;
+  padding: 200px 0 100px 0;
+  .article_container {
+    width: calc(100% - $side);
+    .article_text{
+        color: $dark;
+    }
+  }
+}

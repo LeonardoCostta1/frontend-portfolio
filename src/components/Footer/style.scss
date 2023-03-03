@@ -1,0 +1,45 @@
+@import '../../variables/style';
+.footer {
+  height: 50vh;
+  width: 100%;
+  background: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    width: calc(100% - $side);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__logo-footer-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 40%;
+      height: 100%;
+    }
+    &__links-footer-container {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      &__links-box {
+        div{
+            line-height: 30px;
+            transition: all ease .2s;
+            cursor: pointer;
+            &:hover{
+                opacity: .7;
+            }
+            &:first-child{
+                opacity: .7;
+                margin-bottom: 20px;
+                cursor:auto;
+            }
+        }
+      }
+    }
+  }
+}
