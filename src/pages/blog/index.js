@@ -17,7 +17,7 @@ function Blog() {
         ) : (
           data?.docs?.map((article, index) => {
             return (
-              <Link href={`/blog/${article._id}`}>
+              <Link key={index} href={`/blog/${article._id}`}>
                 <div key={index} className="articles_container">
                   <div className="description_container">
                     <div className="title">{article.title}</div>

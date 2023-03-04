@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Menu />
       <Component {...pageProps} />
       <Bottom/>
-      {/* <Cookies/> */}
+      <Cookies/>
       <Footer />
     </Provider>
   );

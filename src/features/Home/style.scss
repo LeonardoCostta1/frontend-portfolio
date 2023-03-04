@@ -73,11 +73,22 @@
       flex-direction: column;
       .info_box{
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         text-align: right;
-        width: 100px;
+        width: 150px;
+        height: 100px;
+        background: url(../../assets/img/square.svg)no-repeat;
+        background-size: 100%;
+        &:hover{
+          -webkit-animation-name: flash;
+          animation-name: flash;
+          -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
         .number{
           font-size: 3rem;
           font-weight: 700;
@@ -86,6 +97,32 @@
           text-transform: uppercase;
           font-size: 12px;
           letter-spacing: 5px;
+        }
+      }
+
+      @-webkit-keyframes flash {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+  
+        25%,
+        75% {
+          opacity: 0;
+        }
+      }
+  
+      @keyframes flash {
+        0%,
+        50%,
+        100% {
+          opacity: 1;
+        }
+  
+        25%,
+        75% {
+          opacity: 0;
         }
       }
     }
