@@ -35,8 +35,6 @@ function Contact() {
           <Button text="send a message" />
         </form>
       </div>
-      <div className="contact__right-container-container">
-      </div>
     </div>
   );
 }

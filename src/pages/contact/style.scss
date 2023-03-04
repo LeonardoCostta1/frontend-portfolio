@@ -1,0 +1,63 @@
+@import '../../variables/style';
+.contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:$dark;
+  }
+  .contact .contact__left-container-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact .contact__left-container-container .headline_contact {
+    max-width: 33.5rem;
+    font-size: 3rem;
+    line-height: 110%;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .contact .contact__left-container-container .subheadline_contact {
+    margin-bottom: 30px;
+    width: 33.5rem;
+  }
+  .contact .contact__left-container-container form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 33.5rem;
+  }
+  .contact .contact__left-container-container form label {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .contact .contact__left-container-container form input {
+    min-height: 3.2rem;
+    margin-bottom: 0;
+    padding: 0 0 0.9rem;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #fff;
+    background-color: transparent;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    outline: none;
+  }
+  .contact .contact__left-container-container form input:-webkit-autofill, .contact .contact__left-container-container form input:-webkit-autofill:hover, .contact .contact__left-container-container form input:-webkit-autofill:focus, .contact .contact__left-container-container form input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #030507 inset !important;
+    -webkit-text-fill-color: #030507;
+  }
+  .contact .contact__left-container-container form textarea {
+    min-height: 124px;
+    width: 400px;
+    margin-top: 65px;
+    background-color: hsla(0, 0%, 67.8%, 0.1);
+    margin-bottom: 20px;
+  }

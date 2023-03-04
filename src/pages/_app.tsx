@@ -10,6 +10,8 @@ import "../components/SKils/style.css";
 import "../features/Home/style.css";
 import "../features/Home/Portfolio/style.css";
 import "../pages/contact/style.css";
+import "../pages/about/style.css";
+import "../pages/cv/style.css";
 import "../pages/blog/style.css";
 import "../pages/blog/[id]/style.css";
 import "slick-carousel/slick/slick.css"; 

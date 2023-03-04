@@ -1,9 +1,8 @@
 import React from 'react';
 
-// import { Container } from './styles';
 
 function cv() {
-  return <div />;
+  return <div className='cv' />;
 }
 
 export default cv;

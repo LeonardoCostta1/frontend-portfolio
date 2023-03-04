@@ -10,6 +10,7 @@ const Menu: React.FC = () => {
           <Logo />
         </Link>
         <div className="drag_container">
+        <Link href='/about'><div className="nav">about</div></Link>
         <Link href='/cv'><div className="nav">cv</div></Link>
         <Link href='/blog'><div className="nav">blog</div></Link>
         <Link href='/contact'><div className="nav">contact</div></Link>
