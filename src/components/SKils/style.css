@@ -59,6 +59,9 @@
 .skils_home_container .box_container .box_skils .circle_center svg {
   width: 35px;
 }
+.skils_home_container .box_container .box_skils .circle_center .logoname {
+  font-weight: 700;
+}
 .skils_home_container .box_container:hover {
   animation-name: flash;
   animation-duration: 0.3s;

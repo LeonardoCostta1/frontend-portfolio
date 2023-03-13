@@ -13,17 +13,16 @@
   justify-content: center;
   &__container {
     height: 100vh;
-    width: calc(100% - $side /2);
+    width: calc(100% - $side);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     .headline {
-      
-      font-size: 3rem;
+      font-size: 5rem;
       text-transform: uppercase;
       font-weight: 400;
-      line-height: 2.7rem;
+      line-height: 4rem;
       position: relative;
       width: 50%;
       height: 60%;
@@ -31,101 +30,36 @@
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
-      .welcome{
+      .welcome {
         text-transform: uppercase;
         font-size: 12px;
         letter-spacing: 5px;
-        margin-bottom: 20px;
-
+        margin-bottom: 10px;
+        opacity: .6;
       }
-      .text_headline{
+      .text_headline {
         margin-bottom: 30px;
+
         font-weight: 700;
       }
-
-      .option{
+      .option {
         font-size: 10px;
         height: 50px;
-        border-bottom:1px solid hsla(0, 0%, 42.7%, .2);
+        border-bottom: 1px solid hsla(0, 0%, 42.7%, .2);
         margin-bottom: 30px;
-        svg{
+        svg {
           width: 10px;
           margin-right: 20px;
         }
-
       }
-
-      .resume{
-        font-size: 12px;
+      .resume {
+        font-size: 18px;
         line-height: normal;
         margin-bottom: 30px;
-        text-transform: lowercase;
-        width: 350px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
         opacity: .6;
       }
     }
-    .home_information_container{
-      width: 50%;
-      height: 60%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-around;
-      flex-direction: column;
-      .info_box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: right;
-        width: 150px;
-        height: 100px;
-        background: url(../../assets/img/square.svg)no-repeat;
-        background-size: 100%;
-        &:hover{
-          -webkit-animation-name: flash;
-          animation-name: flash;
-          -webkit-animation-duration: .3s;
-          animation-duration: .3s;
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-        }
-        .number{
-          font-size: 3rem;
-          font-weight: 700;
-        }
-        .info{
-          text-transform: uppercase;
-          font-size: 12px;
-          letter-spacing: 5px;
-        }
-      }
-
-      @-webkit-keyframes flash {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-  
-        25%,
-        75% {
-          opacity: 0;
-        }
-      }
-  
-      @keyframes flash {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-  
-        25%,
-        75% {
-          opacity: 0;
-        }
-      }
-    }
-
   }
 }

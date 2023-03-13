@@ -17,6 +17,11 @@
   letter-spacing: -2px;
   text-transform: uppercase;
 }
+.logo__container__company:hover {
+  animation-name: flash;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
 .logo__container__cover {
   width: 25px;
   height: 25px;

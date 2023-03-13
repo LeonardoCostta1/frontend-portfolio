@@ -1,6 +1,27 @@
 @import '../../variables/style';
-.about{
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: calc(100% - $side);
     height: 100vh;
-    width: 100%;
-    background-color: $dark;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      width: 50%;
+      opacity: .7;
+      line-height: 25px;
+    }
+  }
 }

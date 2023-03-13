@@ -1,13 +1,10 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
-import { useSelector } from "react-redux";
 import HomePage from "@/features/Home";
 import Portfolio from "../features/Home/Portfolio";
 import Skils from "../components/SKils";
+import Bottom from "@/components/Bottom";
 export default function Home() {
-  const counter = useSelector((state) => state);
-
-  console.log(counter);
   return (
     <>
       <Head>
@@ -20,6 +17,7 @@ export default function Home() {
         <HomePage />
         <Portfolio />
         <Skils />
+        <Bottom />
       </main>
     </>
   );

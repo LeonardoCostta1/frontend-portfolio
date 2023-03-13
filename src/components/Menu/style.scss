@@ -21,43 +21,44 @@
       justify-content: center;
       .nav{
         text-transform: uppercase;
-        font-size: 11px;
-        opacity: .7;
+        font-size: 10px;
         transition: all ease .2s;
         margin-right: 20px;
+        font-weight: 600;
         cursor: pointer;
-        &:hover{
-          opacity: 1;
+        &:hover {
+          -webkit-animation-name: flash;
+          animation-name: flash;
+          -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
         }
       }
-      .drag{
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
+      .slice{
+        height: 15px;
+        width: 1px;
+        background: #fff;
+        margin-right: 20px;
+      }
+      .translate{
+        height: 30px;
+        width: 30px;
+        background: #333;
+        border-radius: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        div{
-          height: 1px;
-          width: 50%;
-          background: #fff;
-          margin-bottom: 4px;
-          &:nth-child(2){
-            width: 40%;
-            transition: all ease .2s;
-
-          }
-          &:last-child{
-            margin-bottom: 0;
-          }
-        }
+        cursor: pointer;
+        font-size: 12px;
         &:hover{
-          div{
-            &:nth-child(2){
-              width: 60%;
-            }
-          }
+          -webkit-animation-name: flash;
+          animation-name: flash;
+          -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+         
         }
       }
     }

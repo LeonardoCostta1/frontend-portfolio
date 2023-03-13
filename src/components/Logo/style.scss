@@ -16,6 +16,14 @@
       line-height: 24px;
       letter-spacing: -2px;
       text-transform: uppercase;
+      &:hover {
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: .3s;
+        animation-duration: .3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
     }
     &__cover {
         width: 25px;
@@ -38,4 +46,5 @@
       color: #d9d9d9cc;
     }
   }
+  
 }

@@ -14,11 +14,11 @@ const Menu: React.FC = () => {
         <Link href='/cv'><div className="nav">cv</div></Link>
         <Link href='/blog'><div className="nav">blog</div></Link>
         <Link href='/contact'><div className="nav">contact</div></Link>
-          <div className="drag">
-            <div />
-            <div />
-            <div />
-          </div>
+        <div className="slice"/>
+
+        <div className="translate">
+          EN
+        </div>
         </div>
       </div>
     </div>

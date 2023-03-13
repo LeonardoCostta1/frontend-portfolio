@@ -22,37 +22,36 @@
 }
 .menu__container .drag_container .nav {
   text-transform: uppercase;
-  font-size: 11px;
-  opacity: 0.7;
+  font-size: 10px;
   transition: all ease 0.2s;
   margin-right: 20px;
+  font-weight: 600;
   cursor: pointer;
 }
 .menu__container .drag_container .nav:hover {
-  opacity: 1;
+  animation-name: flash;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }
-.menu__container .drag_container .drag {
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
+.menu__container .drag_container .slice {
+  height: 15px;
+  width: 1px;
+  background: #fff;
+  margin-right: 20px;
+}
+.menu__container .drag_container .translate {
+  height: 30px;
+  width: 30px;
+  background: #333;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  cursor: pointer;
+  font-size: 12px;
 }
-.menu__container .drag_container .drag div {
-  height: 1px;
-  width: 50%;
-  background: #fff;
-  margin-bottom: 4px;
-}
-.menu__container .drag_container .drag div:nth-child(2) {
-  width: 40%;
-  transition: all ease 0.2s;
-}
-.menu__container .drag_container .drag div:last-child {
-  margin-bottom: 0;
-}
-.menu__container .drag_container .drag:hover div:nth-child(2) {
-  width: 60%;
+.menu__container .drag_container .translate:hover {
+  animation-name: flash;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 }/*# sourceMappingURL=style.css.map */

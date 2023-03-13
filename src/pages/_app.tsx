@@ -21,17 +21,14 @@ import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import { store } from "../redux/store";
 import Menu from "@/components/Menu";
-import Cookies from "@/components/Cookies";
 import Footer from "@/components/Footer";
-import Bottom from "@/components/Bottom";
-
+// import '../i18n'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       <Menu />
       <Component {...pageProps} />
-      <Bottom/>
-      <Cookies/>
+
       <Footer />
     </Provider>
   );

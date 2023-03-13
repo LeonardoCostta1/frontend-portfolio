@@ -16,7 +16,6 @@ function Bottom() {
           <div className="box_whatsapp">
             <FontAwesomeIcon icon={faWhatsapp} size="lg"/>
           </div>
-          <div className="number">+55 031 99126-1722</div>
         </div>
         <div className="bottom_right">
           <FontAwesomeIcon icon={faLinkedin}/>

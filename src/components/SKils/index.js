@@ -14,7 +14,7 @@ function SKils() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 7,
+    slidesToShow: 8,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -88,6 +88,15 @@ function SKils() {
           <div className="box_container">
             <div className="box_skils">
               <div className="circle_center">
+                <div className="logoname">Next.js</div>
+              </div>
+            </div>
+            <div className="title">Next.js</div>
+          </div>
+
+          <div className="box_container">
+            <div className="box_skils">
+              <div className="circle_center">
                 <FontAwesomeIcon icon={faReact} />
               </div>
             </div>
@@ -120,6 +129,7 @@ function SKils() {
             </div>
             <div className="title">ux & ui designer</div>
           </div>
+
         </Slider>
       </div>
     </div>

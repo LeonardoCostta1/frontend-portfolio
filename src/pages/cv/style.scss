@@ -1,8 +1,191 @@
 @import '../../variables/style';
-.cv{
+.cv {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  padding: 150px 0 100px 0;
+  background: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--container {
+    width: calc(100% - $side);
     min-height: 100vh;
     height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    // border: 1px solid #1d1d1d;
+    padding: 20px 50px;
+
+    &--top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 50px;
+      &__headline {
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: -3px;
+        text-transform: capitalize;
+      }
+      &__subheadline {
+        font-size: 1rem;
+        opacity: .6;
+      }
+    }
+    .cv_download_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+            text-transform: uppercase;
+            font-size: 10px;
+            margin-right: 10px;
+            font-weight: 600;
+        }
+        .cv_download{
+            height: 35px;
+            width: 35px;
+            background: #333;
+            border-radius: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            cursor: pointer;
+            &:hover {
+                -webkit-animation-name: flash;
+                animation-name: flash;
+                -webkit-animation-duration: .3s;
+                animation-duration: .3s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+              }
+        }
+    }
+
+
+  }
+  &--info--container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
     width: 100%;
-    padding: 100px 0;
-    background: $dark;
+    &__left {
+      //   border: 1px solid #ff0029;
+      width: 30%;
+      min-height: 100vh;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding: 50px;
+      .photo {
+        height: 200px;
+        width: 200px;
+        background: url(../../assets/img/lccv.jpg) no-repeat;
+        background-size: 100%;
+        border-radius: 100px;
+        margin-bottom: 30px;
+      }
+
+      .username {
+        text-transform: capitalize;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .resume {
+        opacity: .6;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 30px;
+      }
+      .cv_skils {
+        width: 100%;
+
+        .cv_skils_box {
+          width: 100%;
+          padding: 15px 0;
+          .name {
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 12px;
+          }
+          .progressbar {
+            width: 80%;
+            height: 2px;
+            background: #fff;
+            position: relative;
+          }
+        }
+      }
+    }
+    &__right {
+      width: 70%;
+      min-height: 100vh;
+      height: auto;
+      padding: 50px;
+      .experience_box {
+        width: 100%;
+        padding: 30px;
+        border-bottom: 1px solid #333;
+        margin-bottom: 20px;
+        .experience_top {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          text-transform: capitalize;
+          font-weight: 600;
+          .corporate {
+            font-size: 18px;
+          }
+          .date {
+            text-transform: uppercase;
+            font-size: 14px;
+          }
+        }
+        .resume_experience {
+          opacity: .7;
+          font-size: 12px;
+        }
+        .resume_education {
+          font-weight: 600;
+          font-size: 14px;
+          opacity: .7;
+        }
+      }
+
+      .cv_contact_container {
+        padding: 20px 0;
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .cv_contact {
+          font-size: 14px;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.experience_title {
+  text-align: right;
+  border-bottom: 5px #fff;
+  border-bottom-style: double;
+  width: 100%;
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
